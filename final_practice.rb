@@ -67,22 +67,33 @@ square1 = square(3)
 puts "the square of 3 is #{square1}"
 
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+# What is the return value of your method? 9 then "the square of 3 is 9"
+# How many arguments did you pass your method? 1 argument (3)
+# What data type was your argument(s)? integer
 
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-# check_stock(4, "Coffee");
+def check_stock(stock, item)
+    if stock >= 4
+        return "#{item} is stocked"
+    elsif stock <= 3 && stock != 0
+        return "#{item} - running LOW"
+    else 
+        return "#{item} - OUT of stock!"
+    end
+end
+
+puts check_stock(4, "Coffee");
+
 # # => "Coffee is stocked"
 
-# check_stock(3, "Tortillas");
+puts check_stock(3, "Tortillas");
 # # => "Tortillas - running LOW"
 
-# check_stock(0, "Cheese");
+puts check_stock(0, "Cheese");
 # # => "Cheese - OUT of stock!"
 
-# check_stock(1, "Salsa");
+puts check_stock(1, "Salsa");
 # # => "Salsa - running LOW"
