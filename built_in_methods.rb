@@ -6,23 +6,35 @@
 # The downcase method is called on the string object "Hello World"
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
-"Hello World".downcase
+puts "Hello World".downcase
 
 
-"Hello World".include?("Hello")
+puts "Hello World".include?("Hello")
+#The include method is called on the string object "Hello World". The argument passed is "Hello". Include's job is to check if the string it's been called on includes the argument. 
+#the return value is "true"
+
+puts "Hello World".end_with?("Hello")
+#The end_with method is called on the string object "Hello World". The argument passed is "Hello". ends_with's job is to check if the string it's been called on ends with the provided argument
+#the return value is "false"
 
 
-"Hello World".end_with?("Hello")
+puts "Hello World".end_with?("rld")
+#The end_with method is called on the string object "Hello World". The argument passed is "rld". 
+#ends_with's job is to check if the string its been called on ends with the declared argument. 
+#the return value is "true"
+
+puts 12.even?
+#the .even? method is called on the integer 12 
+#there is no argument declared 
+#.even menthod's job is to check if the integer its been called on is even. 
+#the return value will be "true"
 
 
-"Hello World".end_with?("rld")
-
-
-12.even?
-
-
-18.next
-
+puts 18.next
+#the .next method is called on the integer 18
+#there is no argument declared 
+#.next method will pull the next biggest integer aka "the immediate successor of a number" 
+#the return value here will be 19
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
