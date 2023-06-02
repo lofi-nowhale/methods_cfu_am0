@@ -52,12 +52,40 @@ first_name = "Jeff"
 puts first_name.start_with?("J")
 
 
+#The .chr methos is called on the name variable, which stores the string object "Noelle"
+#The chr method returns the first character of the string and does not require an argument to be declared. 
+#The return for this is "N" as N is the first character of the string "Noelle"
+# the command prints the return value of the first character of the string
+name = "Noelle"
+puts name.chr
+
+
+#The .reverse! method is called on the instagram_handle variable which stores the string object "lofinowhale_"
+#the reverse! method returns the string reversed and does not need an argument.
+#the command will print the return value of the reversed string, in this case "_elahwonifol"
+instagram_handle = "lofinowhale_"
+puts instagram_handle.reverse!
+
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+#the sqrt method is called on the age variable which store the integer object 25 
+# the sqrt method uses in the my_age parameter
+#the return value for this will be 5
+my_age = 25
+puts Integer.sqrt(my_age)
+
+#the odd? method is called on the number_of_mugs variable which stores the integer 21
+#the odd? method does not use a parameter or argument
+#the odd? method should return "true" in this example as 21 is an odd number
+
+number_of_mugs = 21
+
+puts number_of_mugs.odd?
 
 
 
@@ -66,3 +94,22 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+#the shuffle method is called on the dog_names array and does not require the use of an argument or parameter
+#the shuffle method will return a randomized order of the array that it's been called on 
+dog_names = ["Gimli", "Boo", "Harleigh", "Kipper"]
+puts dog_names.shuffle
+
+#the push method is called on the cousin_ages array and uses the argument (13,10) to add integers 13 and 10 to the array
+#just running the cousin_ages.push(13,10) will return the ages as they were added (25, 26, 29, 30, 35, 13, 10)
+#calling the sort method at the end of this line will return the integers in size order
+# 10
+# 13
+# 25
+# 26
+# 29
+# 30
+# 35
+cousin_ages = [25, 26, 29, 30, 35]
+
+puts cousin_ages.push(13,10).sort
