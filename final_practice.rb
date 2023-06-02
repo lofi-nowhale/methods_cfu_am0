@@ -6,25 +6,38 @@
 
 # 1: Write a method named greeting that returns a string with a general greeting. 
 
-def greeting(name,time_of_day)
-    return "Hey, #{name}! Hope you have a nice #{time_of_day}!"
+def greeting(time_of_day)
+    return "Hi! Hope you have a nice #{time_of_day}!"
 end
 
-noelle_greeting = greeting("Noelle", "evening")
-phil_greeting = greeting("Phil", "afternoon")
+greeting1 = greeting("morning")
+greeting2 = greeting("evening")
+greeting3 = greeting("afternoon")
 
-puts noelle_greeting
-puts phil_greeting
+puts greeting1
+puts greeting2
+puts greeting3
 
-# What is the return value of your method? Hey, Noelle! Hope you have a nice evening! AND Hey, Phil! Hope you have a nice afternoon!
-# How many arguments did you pass your method? 4 arguments total -> Noelle, evening, Phil, afternoon
+
+# What is the return value of your method? String - "Hi! Hope you have a nice #{time_of_day}!"
+# How many arguments did you pass your method? 3: morning, evening, afternoon
 
 
 # 2: Write a method named custom_greeting that returns a greeting WITH a specific name.
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+def custom_greeting(name,time_of_day)
+    return "Hey, #{name}! Hope you have a nice #{time_of_day}!"
+end
+
+noelle_greeting = custom_greeting("Noelle", "evening")
+phil_greeting = custom_greeting("Phil", "afternoon")
+
+puts noelle_greeting
+puts phil_greeting
+
+# What is the return value of your method? string: "Hey, #{name}! Hope you have a nice #{time_of_day}!"
+# How many arguments did you pass your method? 4 arguments total -> Noelle, evening, Phil, afternoon
+# What data type was your argument(s)? strings
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
