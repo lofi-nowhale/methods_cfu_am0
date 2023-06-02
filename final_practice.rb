@@ -6,8 +6,18 @@
 
 # 1: Write a method named greeting that returns a string with a general greeting. 
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
+def greeting(name,time_of_day)
+    return "Hey, #{name}! Hope you have a nice #{time_of_day}!"
+end
+
+noelle_greeting = greeting("Noelle", "evening")
+phil_greeting = greeting("Phil", "afternoon")
+
+puts noelle_greeting
+puts phil_greeting
+
+# What is the return value of your method? Hey, Noelle! Hope you have a nice evening! AND Hey, Phil! Hope you have a nice afternoon!
+# How many arguments did you pass your method? 4 arguments total -> Noelle, evening, Phil, afternoon
 
 
 # 2: Write a method named custom_greeting that returns a greeting WITH a specific name.
@@ -35,14 +45,14 @@
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-check_stock(4, "Coffee");
-# => "Coffee is stocked"
+# check_stock(4, "Coffee");
+# # => "Coffee is stocked"
 
-check_stock(3, "Tortillas");
-# => "Tortillas - running LOW"
+# check_stock(3, "Tortillas");
+# # => "Tortillas - running LOW"
 
-check_stock(0, "Cheese");
-# => "Cheese - OUT of stock!"
+# check_stock(0, "Cheese");
+# # => "Cheese - OUT of stock!"
 
-check_stock(1, "Salsa");
-# => "Salsa - running LOW"
+# check_stock(1, "Salsa");
+# # => "Salsa - running LOW"
