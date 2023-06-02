@@ -42,13 +42,30 @@ puts phil_greeting
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+def greet_person(first_name, middle_name, last_name)
+    return "Welcome, #{first_name} #{middle_name} #{last_name}."
+end
+
+puts greet_person("Noelle", "Elizabeth", "Hemphill")
+
+# What is the return value of your method? String "Welcome, Noelle Elizabeth Hemphill."
+# How many arguments did you pass your method? 3
+# What data type was your argument(s)? strings
 
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
+
+def square(num)
+    return num * num
+end
+
+puts square(3)
+
+square1 = square(3)
+
+puts "the square of 3 is #{square1}"
+
 
 # What is the return value of your method?
 # How many arguments did you pass your method?
